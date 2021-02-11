@@ -13,11 +13,11 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'NAMA BOTMU'; 
-const instagram = 'LINK INSTAGRAMU'; 
-const telegram = 'LINK TELEMU'; 
+const BotName = '[SHI BOT]'; 
+const instagram = ''; 
+const telegram = ''; 
 const kapanbotaktif = 'KETIKA HANYA DIAKTIFKAN'; 
-const youtube = 'LINK YTMU';
+const youtube = '';
 //const grupch1 = 'belum ada grup'; 
 //const grupch2 = 'belum ada grup' ; 
 const
@@ -64,7 +64,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@reuz.id')
+conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@ihsn.rfqi')
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -99,71 +99,71 @@ conn.sendMessage(group.gid, "Halo semua!!!", MessageType.extendedText) // say he
 
 }
 //chat
-if (text == 'halo')
+if (text == '')
 {
 conn.sendMessage(id, tambahan.halo ,MessageType.text);
 }
-else if (text == 'hai')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
-else if (text == 'assalamualaikum')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
-else if (text == 'bro')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
-else if (text == 'p')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.p ,MessageType.text);
 }
-else if (text == 'test')
+else if (text == '')
 {
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
-else if (text == 'HALO')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.halo ,MessageType.text);
 }
-else if (text == 'Halo')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.halo ,MessageType.text);
 }
-else if (text == 'Hai')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
-else if (text == 'Assalamualaikum')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
-else if (text == 'Bro')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
-else if (text == 'P')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.p ,MessageType.text);
 }
-else if (text == 'Test')
+else if (text == '')
 {
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
-else if (text == 'HAI')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
-else if (text == 'ASSALAMUALAIKUM')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
-else if (text == 'BRO')
+else if (text == '')
 {
 conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
-else if (text == 'TEST')
+else if (text == '')
 {
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
